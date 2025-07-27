@@ -13,7 +13,7 @@ color: Colors.white.withAlpha(25),
   borderRadius: BorderRadius.circular(16)
 ),
 child: Center(
-  child: Icon(icon,color: Colors.white,size: 28,),
+  child: IconButton(onPressed: (){},icon: Icon( icon,color: Colors.white,size: 28,) ),
 ),
     );
   }

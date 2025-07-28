@@ -8,13 +8,13 @@ final int maxLines;
   @override
   Widget build(BuildContext context) {
     return TextField(
-      cursorColor:KPrimaryColor ,
+      cursorColor:kPrimaryColor ,
       maxLines: maxLines,
       decoration:InputDecoration(
-        hintText: hint,hintStyle: TextStyle(color: KPrimaryColor),
+        hintText: hint,hintStyle: TextStyle(color: kPrimaryColor),
         border: buildborder(),
         enabledBorder: buildborder(),
-        focusedBorder: buildborder(color: KPrimaryColor)
+        focusedBorder: buildborder(color: kPrimaryColor)
       ),
     );
   }

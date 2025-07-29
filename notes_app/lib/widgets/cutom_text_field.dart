@@ -13,7 +13,7 @@ final void Function(String?)? onSaved;
       validator: (value){
         if(value?.isEmpty??true){
           return "field is required";
-        }else{null;}
+        }else{return null;}
       },
       cursorColor:kPrimaryColor ,
       maxLines: maxLines,

@@ -12,8 +12,9 @@ addNote(NoteModel note)async{
  try{ 
 emit(AddNoteLoading());
 var notesBox =Hive.box<NoteModel>(kNoteBox);
+await notesBox.add(note);
 (AddNoteSuccess());
- }catch(e){AddNoteFailure(e.toString());}
+ }catch(e){emit(AddNoteFailure(e.toString()));}
 }
-
 }
+ 

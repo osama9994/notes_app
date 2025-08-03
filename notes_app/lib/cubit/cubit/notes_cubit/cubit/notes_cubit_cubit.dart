@@ -17,7 +17,7 @@ List<NoteModel>?notes;
 
 var notesBox =Hive.box<NoteModel>(kNoteBox);
 notes=notesBox.values.toList();
-
+emit(NotesCubitsuccess());
 
   }
 }

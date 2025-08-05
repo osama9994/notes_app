@@ -15,7 +15,7 @@ void main() async {
   Hive.registerAdapter(NoteModelAdapter());
   await Hive.openBox<NoteModel>(kNoteBox);
   runApp(const Notesapp());
-}
+} 
 
 class Notesapp extends StatelessWidget {
   const Notesapp({super.key});
